@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etTitleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Τίτλος Ταινίας" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoryEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPickDateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Επιλογή Ημερομηνίας" />
+
+    <TextView
+        android:id="@+id/tvSelectedDateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Δεν έχει επιλεγεί ημερομηνία" />
+
+    <EditText
+        android:id="@+id/etCommentsEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Σχόλια"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ενημέρωση" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="Διαγραφή" />
+</LinearLayout>

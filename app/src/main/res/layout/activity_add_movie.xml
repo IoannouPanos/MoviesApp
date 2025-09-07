@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Τίτλος -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Τίτλος Ταινίας" />
+
+    <!-- Spinner για κατηγορία -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <!-- Date Picker (κουμπί για επιλογή ημερομηνίας) -->
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Επιλογή Ημερομηνίας" />
+
+    <!-- TextView για εμφάνιση επιλεγμένης ημερομηνίας -->
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Δεν έχει επιλεγεί ημερομηνία" />
+
+    <!-- Σχόλια -->
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Σχόλια"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <!-- Κουμπί Αποθήκευσης -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Αποθήκευση" />
+
+</LinearLayout>
